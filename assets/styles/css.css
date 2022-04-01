@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Varela Round", sans-serif;
+}
+
+a {
+  	text-decoration: none;
+	color: black;
+}
+
+li {
+  	list-style: none;
+	text-align: center;
+}
+
+h2 {
+	line-height: 50px;
+	font-size: 40px;
+}
+
+p {
+	line-height: 25px;
+	margin: 15px 0;	
+}
+
+.clear {
+	clear: left;
+}
+
+.cb {
+	clear: both;
+}
+
+
+strong {
+font-size: 25px;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+/* CSS untuk bagian header */
+header {
+	height: 75px;
+	width: 100%;
+	background-color: whitesmoke;
+	position :fixed;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 0 12px 0 rgba(36, 50, 66, .25);
+}
+
+.header-left {
+  	float: left;
+}
+
+.logo {
+	display: block;
+	font-size: 2em;
+	letter-spacing: -4px;
+	line-height: 75px;
+	cursor: pointer;
+}
+
+span {
+  	color: #F0A500;
+}
+
+.header-right {
+  	float: right;
+}
+
+.header-right a {
+	width: 120px;
+	line-height: 75px;
+	color: white;
+	display: block;
+	float: left;
+	transition: all 0.5s;
+}
+
+.header-right a:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: all 0.5s;
+}
+
+.header-right li {
+	color: black;
+	font-weight: bold;
+}
+
+.checkbtn {		/* navbar icon */
+	margin: 20px 0;
+	height: 30px;
+	width: 30px;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+
+#check { 
+  	display: none;
+}
+
+/* CSS untuk bagian Slider */
+.slides-wrapper {
+	background: rgba(0, 0, 0, 1);
+	width: 100%;
+	height: 665px;
+	overflow: hidden; 
+}
+
+.slides { 
+	width: 500%;
+	height: 665px;
+	display: flex;
+}
+
+.slides input {
+  	display: none;
+}
+
+.slide {
+	width: 20%;
+	transition: all 2s;
+}
+
+.slide img {
+	width: 100%;
+	height: 665px;
+	object-fit: cover;
+	opacity: 0.4;
+}
+
+/* CSS untuk Manual Navigation Slide */
+.navigation-manual {
+	position: absolute;
+	width: 100%;
+	margin-top: 635px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn {
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.manual-btn:not(:last-child) {
+  	margin-right: 40px;
+}
+
+.manual-btn:hover {
+  	background: #40D3DC;
+}
+
+#radio1:checked ~ .first {
+  	margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  	margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  	margin-left: -40%;
+}
+
+/* CSS untuk Auto Navigation Slide */
+.navigation-auto {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 635px;
+}
+
+.navigation-auto div {
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  	background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-
+{
+  	background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  	background: #40D3DC;
+}
+
+
+/* CSS untuk about-wrapper */
+.about-wrapper {
+	background-color: #f6f8fa;
+	padding: 100px 0;
+}
+
+.about-left {
+	width: 45%;
+	float: left;
+}
+
+.about-left img {
+	width: 100%;
+}
+
+.about-right {
+	width: 55%;
+	float: left;
+	padding: 0 0 0 40px;
+}
+
+.about-right p {
+	text-align: justify;
+}
+
+button {
+	border-radius: 5px;
+	border: none;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+button:hover {
+	color: black;
+}
+
+.btn1 {
+	background-color: #F0A500;
+	width: 170px;
+}
+
+.btn1 span {
+	color: white;
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s;
+}
+
+.btn1 span::after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+/* ini ngemunculin >  */
+.btn1:hover span {		
+	padding-right: 20px;
+}
+
+.btn1:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.btn2 {
+	background-color: white;
+	color: black;
+}
+
+.btn2:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* CSS untuk bagian Services */
+.services-wrapper {
+	background-color: rgba(214, 229, 250, 0.4);
+	text-align: center;
+	padding: 100px 0;
+}
+
+.technology {
+	padding: 30px 0;
+	width: 16.6%;
+	float: left;
+}
+
+.technology img {
+	display:inline-block;
+	height: 50px;
+	width: 50px;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.technology h3 {
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+.services {
+	border-top: 1px solid rgba(91, 133, 180, 0.1);
+}
+
+.service {
+	width: 25%;
+	margin: 30px 0;
+	text-align: center;
+	float: left;
+}
+
+.service-card {
+  	float: left;
+	margin-left: 2.5%;
+  	width: 95%;
+  	background-color: white;
+	color: black;
+  	border-radius: 5px;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  	transition: all 0.3s;
+	
+}
+
+.service-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.service-card img {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 200px;
+}
+
+.service-content {
+	padding: 15px 0;
+}
+
+.service-card p {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+
+/* ini untuk bagian projects */
+.projects-wrapper {
+	background-color: #fafafa;
+	text-align: center;
+	padding: 100px 0;
+} 
+
+.projects {
+	width: 100%;
+	margin-top: 25px;
+}
+
+.project {
+	float: left;
+	width: 25%;
+	margin: 30px 0;
+}
+
+.project-card {
+	padding: 0 5px;
+	position: relative;
+	text-align: left;
+	opacity: 0.7;
+}
+
+.project-card:hover {
+	opacity: 1;
+}
+
+.project-card img {
+	width: 100%;
+	height: 400px;
+}
+
+.project-card h3, .project-card p {
+	color: white;
+	position: absolute;
+	margin: 10px;
+	
+}
+
+.project-card h3 {
+	top: 60%;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.project-card p {
+	width: 100%;
+	top: 85%;
+	font-size: 15px;
+}
+
+.project-card span {
+	/* display: inline-block; */
+	position: absolute;
+	left: 130px;
+	top: 2px;
+}
+
+.project-card span img {
+	height: 20px;
+	width: 30px;
+}
+
+.color-black-invert {
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(44deg) brightness(96%) contrast(113%);
+}
+
+
+/* ini untuk bagian team */
+.team-wrapper {
+	background-color: rgb(239, 244, 245);
+	text-align: center;
+	padding: 100px 0;
+}
+
+.team {
+	justify-content: center;
+}
+
+.team-col {
+	margin-top: 40px;
+	float: left;
+	width: 20%;
+}
+
+.team-card {
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.avatar {
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.team-card h4 {
+	font-size: 20px;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+.team-card h5 {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+.nama-anggota {
+	height: 45px;
+}
+
+.role {
+	height: 30px;
+	display: inline-block;
+}
+
+.social-media-list {
+	display: flex;
+	justify-content: center;
+}
+
+.social-media-list a {
+	margin: 0 5%;
+}
+
+.social-media-list a img {
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+
+.social-media-list img:hover {
+	opacity: 0.7;
+}
+
+
+/* ini untuk bagian contact */
+.contact-wrapper {
+	background-color: #f6f8fa;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.contact {
+	margin-top: 40px;
+}
+
+.contact input, textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+
+/* ini untuk bagian hire */
+.hire-wrapper .container {
+	padding: 80px 0;
+	background-color: #2d3e50;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+/* CSS untuk bagian Footer */
+footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #f5f5f5;;
+}
+
+footer .container {
+	padding: 25px 0;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-left h3 {
+	margin-bottom: 8px;
+}
+
+.footer-left .kelompok {
+	margin-top: 25px;
+	font-weight: lighter;
+	color: #aaaaaa;
+}
+
+.footer-right {
+	float: right;
+	padding-left: 200px;
+}
+
+.footer-right ul {
+	display: flex;
+}
+
+.footer-right li {
+	margin-left: 40px;
+	font-weight: bold;
+}

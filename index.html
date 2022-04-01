@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <link rel = "icon" href="./assets/image/3301602-trans.png" type="image/x-icon">
+    <title>BuildWeb - Create Your Own Website</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="./assets/icon/bars-solid.svg" alt="">
+            </label>
+            <div class="header-left">
+                <a href="#"><label class="logo"><span>BUILD</span>WEB</label></a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <a href="#home"><li>HOME</li></a>
+                    <a href="#about"><li>ABOUT</li></a>
+                    <a href="#services"><li>SERVICES</li></a>
+                    <a href="#projects"><li>PORTOFOLIO</li></a>
+                    <a href="#team"><li>TEAM</li></a>
+                    <a href="#contact"><li>CONTACT</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ini bagian image slider -->
+        <div id="home" class="slides-wrapper">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+                <div class="slide first">
+                    <img src="./assets/image/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/image/7.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/image/3.jpg" alt="">
+                </div>
+
+                <!-- ini bagian tombol untuk auto slider -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                 <!-- ini bagian manual slider, untuk label pas di klik -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ini bagian about -->
+        <div id="about" class="about-wrapper">
+            <div class="container">
+                <div class="about-left">
+                    <img src="./assets/image/3301602-trans.png" alt="">
+                </div>
+                <div class="about-right">
+                    <h2>We Provide the Best Quality Services Ever</h2>
+                    <p><strong><span>Build</span>Web</strong> is a leading Web Development Company in Bali with an expert team of Web Developers use latest frontend technologies and best practice to over the best website development services. We are a reliable and affordable digital company and talent network. We channel creativity, colors, copy, and code to help our clients with better branding. Our team of web developers helps your business stand out of the coward in the online marketplace by providing brilliantly designed website.</p>
+                    <button class="button btn1"><span>Learn More</span></button>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- ini bagian services -->
+        <div id="services" class="services-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>Our Services</h2>
+                    <p>Everything you need is right here. <br> We offer everything you need to grow your company.</p>
+                </div>
+                <div class="technologies">
+                    <div class="technology">
+                        <img src="./assets/icon/angular-brands.svg" alt="">
+                        <h3>Angular <br>Development</h3>
+                    </div>
+                    <div class="technology">
+                        <img src="./assets/icon/node-js-brands.svg" alt="">
+                        <h3>Node.Js <br>Development</h3>
+                    </div>
+                    <div class="technology">
+                        <img src="./assets/icon/react-brands.svg" alt="">
+                        <h3>React.Js <br>Development</h3>
+                    </div>
+                    <div class="technology">
+                        <img src="./assets/icon/php-brands.svg" alt="">
+                        <h3>PHP Web <br>Development</h3>
+                    </div>
+                    <div class="technology">
+                        <img src="./assets/icon/laravel-brands.svg" alt="">
+                        <h3>Laravel <br>Development</h3>
+                    </div>
+                    <div class="technology">
+                        <img src="./assets/icon/magento-brands.svg" alt="">
+                        <h3>Magento <br>Development</h3>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./assets/image/6505894.jpg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <p>E-commerce <br>Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./assets/image/6617.jpg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <p>Fintech <br>Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./assets/image/5063406.jpg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <p>Healthcare <br>Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./assets/image/4782264.jpg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <p>Social Network <br>Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ini bagian project -->
+        <div id="projects" class="projects-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>Our Projects</h2>
+                    <p>These are successful projects on which we have worked. Absolutely stunning design and functionality.</p>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-card">
+                            <img src="./assets/image/man-project-supervisor-holding-laptop-pointing-display.jpg" alt="">
+                            <h3>Dashboard Design for Cryptocurrency</h3>
+                            <a href="#"><p>VIEW PROJECT <span><img src="./assets/icon/arrow-right-long-solid.svg" alt="" class="color-black-invert"></span></p></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-card">
+                            <img src="./assets/image/medium-shot-smiley-woman-with-laptop.jpg" alt="">
+                            <h3>Real Time Course Enrolments</h3>
+                            <a href="#"><p>VIEW PROJECT <span><img src="./assets/icon/arrow-right-long-solid.svg" alt="" class="color-black-invert"></span></p></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-card">
+                            <img src="./assets/image/medium-shot-people-working-with-laptop.jpg" alt="">
+                            <h3>Auction Platform Interface</h3>
+                            <a href="#"><p>VIEW PROJECT <span><img src="./assets/icon/arrow-right-long-solid.svg" alt="" class="color-black-invert"></span></p></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-card">
+                            <img src="./assets/image/business-executives-discussing-laptop.jpg" alt="">
+                            <h3>Tech Consulting Design & Branding</h3>
+                            <a href="#"><p>VIEW PROJECT <span><img src="./assets/icon/arrow-right-long-solid.svg" alt="" class="color-black-invert"></span></p></a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ini bagian team -->
+        <div id="team" class="team-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>Who We Are? Meet Our Team!</h2>
+                    <p>We listen, we discuss, we advise and develop. We love to learn and use the latest technologies.</p>
+                </div>
+                <div class="team">
+                    <div class="team-col">
+                        <div class="team-card">
+                            <img src="./assets/image/ridwan.jpg" alt="" class="avatar">
+                            <h4 class="nama-anggota">Ridwan Syah</h4>
+                            <h5 class="role">Project Architect</h5>
+                            <div class="social-media-list">
+                                <a href="#"><img src="./assets/icon/twitter-square-brands.svg" alt="twitter"></a>
+                                <a href="#"><img src="./assets/icon/linkedin-brands.svg" alt="linkedin"></a>
+                                <a href="#"><img src="./assets/icon/github-square-brands.svg" alt="github"></a>
+                                <a href="#"><img src="./assets/icon/instagram-square-brands.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-col">
+                        <div class="team-card">
+                            <img src="./assets/image/ms.jpg" alt="" class="avatar">
+                            <h4 class="nama-anggota">Mushlihuddin Syamil</h4>
+                            <h5 class="role">Project Manager</h5>
+                            <div class="social-media-list">
+                                <a href="#"><img src="./assets/icon/twitter-square-brands.svg" alt="twitter"></a>
+                                <a href="#"><img src="./assets/icon/linkedin-brands.svg" alt="linkedin"></a>
+                                <a href="#"><img src="./assets/icon/github-square-brands.svg" alt="github"></a>
+                                <a href="#"><img src="./assets/icon/instagram-square-brands.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-col">
+                        <div class="team-card">
+                            <img src="./assets/image/saya.jpg" alt="" class="avatar">
+                            <h4 class="nama-anggota">Sherly Anggita</h4>
+                            <h5 class="role">UI/UX Designer</h5>
+                            <div class="social-media-list">
+                                <a href="https://twitter.com/nptayusherly" target="_blank"><img src="./assets/icon/twitter-square-brands.svg" alt="twitter"></a>
+                                <a href="https://www.linkedin.com/in/nptayusherly" target="_blank"><img src="./assets/icon/linkedin-brands.svg" alt="linkedin"></a>
+                                <a href="https://github.com/nptayusherly" target="_blank"><img src="./assets/icon/github-square-brands.svg" alt="github"></a>
+                                <a href="https://www.instagram.com/nptayusherly/" target="_blank"><img src="./assets/icon/instagram-square-brands.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-col up">
+                        <div class="team-card edit">
+                            <img src="./assets/image/abi.jpg" alt="" class="avatar">
+                            <h4 class="nama-anggota">Abi Nurhakim</h4>
+                            <h5 class="role">Web Developer</h5>
+                            <div class="social-media-list">
+                                <a href="#"><img src="./assets/icon/twitter-square-brands.svg" alt="twitter"></a>
+                                <a href="#"><img src="./assets/icon/linkedin-brands.svg" alt="linkedin"></a>
+                                <a href="#"><img src="./assets/icon/github-square-brands.svg" alt="github"></a>
+                                <a href="#"><img src="./assets/icon/instagram-square-brands.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-col up">
+                        <div class="team-card edit edit2">
+                            <img src="./assets/image/mora.jpg" alt="" class="avatar">
+                            <h4 class="nama-anggota">Mora Panjaitan</h4>
+                            <h5 class="role">Web Developer</h5>
+                            <div class="social-media-list">
+                                <a href="#"><img src="./assets/icon/twitter-square-brands.svg" alt="twitter"></a>
+                                <a href="#"><img src="./assets/icon/linkedin-brands.svg" alt="linkedin"></a>
+                                <a href="#"><img src="./assets/icon/github-square-brands.svg" alt="github"></a>
+                                <a href="#"><img src="./assets/icon/instagram-square-brands.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ini bagian hire-developer -->
+        <div class="hire-wrapper">
+            <div class="container">
+                <h1>What are you waiting for? </h1>
+                <p>Enhance your vision for a better life.</p>
+                <a href="#contact"><button class="button btn2">Contact Us!</button></a>
+            </div>
+        </div>
+        
+        <!-- ini bagian contact -->
+        <div id="contact" class="contact-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>Say Something!</h2>
+                    <p>Any question or remarks? Just write us a message!</p>
+                </div>
+                <div class="contact">
+                    <form action="">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <input type="submit" value="Send Now">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ini bagian footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <h3>Copyright &#169;2022 - BuildWeb Official - All Rights Reserved.</h3>
+                <p>Gg. Merta Gangga No.27, Pemogan, Denpasar Selatan, <br>Kota Denpasar, Bali 80221, Indonesia</p>
+                <p class="kelompok">Created with &hearts; by Kelompok A23</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="cb"></div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./assets/javascript/js.js"></script>
+</body>
+</html>

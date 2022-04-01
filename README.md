@@ -1,2 +1,3 @@
-# A23
-TEAM A23 FGA 2022-FRONTEND
+# BuidWeb
+
+This site published at https://nptayusherly.github.io/build-web/
